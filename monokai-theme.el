@@ -5677,6 +5677,55 @@ Also affects 'linum-mode' background."
       (,monokai-256-class (:foreground ,monokai-256-foreground
                                         :background ,monokai-256-highlight-line))))
 
+   ;; ansi-color
+   `(ansi-color-black
+     ((,monokai-class (:foreground ,monokai-background
+                                   :background ,monokai-highlight-line))
+      (,monokai-256-class (:foreground ,monokai-256-background
+                                       :background ,monokai-256-highlight-line))))
+
+   `(ansi-color-red
+     ((,monokai-class (:foreground ,monokai-red
+                                   :background ,monokai-red-d))
+      (,monokai-256-class (:foreground ,monokai-256-red
+                                       :background ,monokai-256-red-d))))
+
+   `(ansi-color-green
+     ((,monokai-class (:foreground ,monokai-green
+                                   :background ,monokai-green-d))
+      (,monokai-256-class (:foreground ,monokai-256-green
+                                       :background ,monokai-256-green-d))))
+
+   `(ansi-color-yellow
+     ((,monokai-class (:foreground ,monokai-yellow
+                                   :background ,monokai-yellow-d))
+      (,monokai-256-class (:foreground ,monokai-256-yellow
+                                       :background ,monokai-256-yellow-d))))
+
+   `(ansi-color-blue
+     ((,monokai-class (:foreground ,monokai-blue
+                                   :background ,monokai-blue-d))
+      (,monokai-256-class (:foreground ,monokai-256-blue
+                                       :background ,monokai-256-blue-d))))
+
+   `(ansi-color-magenta
+     ((,monokai-class (:foreground ,monokai-magenta
+                                   :background ,monokai-magenta-d))
+      (,monokai-256-class (:foreground ,monokai-256-magenta
+                                       :background ,monokai-256-magenta-d))))
+
+   `(ansi-color-cyan
+     ((,monokai-class (:foreground ,monokai-cyan
+                                   :background ,monokai-cyan-d))
+      (,monokai-256-class (:foreground ,monokai-256-cyan
+                                       :background ,monokai-256-cyan-d))))
+
+   `(ansi-color-white
+     ((,monokai-class (:foreground ,monokai-emphasis
+                                   :background ,monokai-foreground))
+      (,monokai-256-class (:foreground ,monokai-256-emphasis
+                                       :background ,monokai-256-foreground))))
+
    ;; term
    `(term-color-black
      ((,monokai-class (:foreground ,monokai-background
@@ -6508,6 +6557,8 @@ Also affects 'linum-mode' background."
    'monokai
    `(ansi-color-names-vector [,monokai-background ,monokai-red ,monokai-green ,monokai-yellow
                                                   ,monokai-blue ,monokai-magenta ,monokai-cyan ,monokai-foreground])
+   `(ansi-color-normal-colors-vector [ansi-color-black ansi-color-red ansi-color-green ansi-color-yellow
+                                                         ansi-color-blue ansi-color-magenta ansi-color-cyan ansi-color-white])
 
    ;; compilation
    `(compilation-message-face 'default)
